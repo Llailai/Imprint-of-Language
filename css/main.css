@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("../font/Milligram-Bold.otf") format("woff2")
+}
+
+@font-face {
+    font-family: "Custom";
+    src: url("./ImprintOfLanguage-Regular-2.ttf") format("woff2")
+}
+
+/* html {
+    font-size: 16px;
+} */
+
+body,
+.main,
+.home {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main {}
+
+#home {
+    height: 100vh;
+    background: url(../image/home1.jpg);
+    background-size: cover;
+}
+
+.home {
+    margin-top: 3rem;
+
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-icon {
+    position: absolute;
+    width: 5rem;
+    left: 20%;
+    top: 45%;
+
+}
+
+.home-header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.home-text {
+    position: absolute;
+    left: 12.5%;
+}
+
+.home-header img {
+    width: 10.5rem;
+    cursor: pointer;
+}
+
+
+
+.home-content {
+    position: absolute;
+    left: 33%;
+    top: 35%;
+}
+
+
+.home p {
+    font-weight: 800;
+    font-size: 10rem;
+    font-family: "CustomFont", sans-serif;
+}
+
+.small-all {
+    width: 60rem;
+    position: relative;
+    /* margin: auto; */
+}
+
+.small-all img {
+    width: 60rem;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: z-index 0.2s;
+    /* 添加过渡效果 */
+}
+
+.crs {
+    position: absolute;
+    left: 68.3%;
+    width: 7.6rem;
+    height: 7.6rem;
+    background-color: aqua;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 9999;
+    cursor: pointer;
+
+}
+
+.char {
+    font-size: 24px;
+    transition: font-size 100ms ease-out;
+}
+
+.pressed {
+    font-size: 40px;
+}
+
+#output span {
+    font-family: "Custom", sans-serif;
+}
+
+
+#eye {
+    position: relative;
+    background: url(../image/eye.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.eyebg {
+    position: relative;
+    /* width: 40rem;
+    height: 20rem; */
+    /* background: url(./image/眼睛白色底部.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+
+}
+
+#eye img {}
+
+.home-timeline__eye-container,
+.home-timeline__eye-section {
+    background-color: transparent !important;
+}
+
+.home-timeline__eye-wrapper {
+    background-color: white !important;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint of Language</title>
+    <link rel="stylesheet" href="./css/playGround.css">
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="header">
+            <div class="home-header">
+                <a href="./index.html"><img src="./image/home.jpg" alt=""></a>
+                <div class="right"> <a href="./About.html"> <img src="./image/导航about.png" alt=""></a>
+                    <a href="./Gallery.html"> <img src="./image/导航gallery.png" alt=""></a>
+                    <a href="./PlayGround.html"><img style="width: 9rem;" src="./image/导航playground.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="header-text">
+                <p>Type Your Feelings Here,</p>
+                <p>Where Words Embrace Emotions.</p>
+            </div>
+            <div class="header-img">
+                <img src="./image/icon5.png" alt="">
+                <img src="./image/icon5.png" alt="">
+            </div>
+        </div>
+
+        <div id="container">
+            <p>What colour is your mood?</p>
+            <div class="content-input">
+                <div class="pointer">
+                    <img onclick="handleColor('#fbb6fa')" src="./image/粉色手.png" alt="">
+                    <img onclick="handleColor('#65ddc6')" src="./image/蓝绿手.png" alt="">
+                    <img onclick="handleColor('#efeee9')" src="./image/米色手.png" alt="">
+                    <img onclick="handleColor('#fd6233')" src="./image/红色手.png" alt="">
+                    <img onclick="handleColor('#0549e3')" src="./image/深蓝色手.png" alt="">
+                    <img onclick="handleColor('#e2f158')" src="./image/黄绿色手.png" alt="">
+                </div>
+                <p>Try pressing the keyboard for different durations to type in your feelings</p>
+                <div style="position: relative;">
+                    <textarea id="input" type="text"></textarea>
+                    <div id="output" tabindex="0">
+                    </div>
+                </div>
+
+                <div class="down">
+                    <div></div>
+                    <img id="exportBtn" src="./image/download.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./js/playground.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<style media="print">
+    .header,
+    #container p,
+    .pointer,
+    .down,
+    textarea {
+        display: none;
+    }
+
+    #output {
+        display: block;
+        position: relative;
+        /* position: absolute;
+        left: 0%; */
+        /* top: 50%;
+        transform: translateX(-50%, -50%); */
+        /* padding: 20px; */
+
+    }
+</style>
+<script>
+    document.getElementById("exportBtn").addEventListener("click", function () {
+        window.print();
+    });
+</script>
+
+
+
+</html>

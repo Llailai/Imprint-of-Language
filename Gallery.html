@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint of Language</title>
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-header">
+            <div class="home-header">
+                <a href="./index.html"><img src="./image/home.jpg" alt=""></a>
+                <div class="right"> <a href="./About.html"> <img src="./image/导航about.png" alt=""></a>
+                    <a href="./Gallery.html"> <img src="./image/导航gallery.png" alt=""></a>
+                    <a href="./PlayGround.html"><img style="width: 9rem;" src="./image/导航playground.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="main-content">
+            </div>
+
+        </div>
+        <div id="container">
+        </div>
+        <div class="active">
+            <span>
+                <p>Emotional
+                </p>
+                <p>Movement</p>
+            </span>
+            <img class="icon" src="./image/acitve/5771697976543_.pic.jpg" alt="">
+            <div class="number" id="gifContainer">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="module">
+    function generateRandomLetters(num) {
+        var letters = "abcdefghijklmnopqrstuvwxyz";
+        var result = "";
+        for (var i = 0; i < num; i++) {
+            var index = Math.floor(Math.random() * (letters.length - i));
+            result += letters.charAt(index);
+            letters = letters.substring(0, index) + letters.substring(index + 1);
+        }
+        return result;
+    }
+
+    console.log()
+    var letters = generateRandomLetters(14).split('')
+
+
+    letters.forEach(function (number) {
+        var numberElem = document.createElement('span');
+        numberElem.className = 'number';
+        numberElem.innerHTML = number;
+        container.appendChild(numberElem);
+
+        // 绑定点击事件监听器
+        const textColor = ['#ffb9fe', '#63d3be', '#074ce7', '#efeee9', '#fd6233'];
+        numberElem.addEventListener('mouseover', function () {
+            numberElem.style.color = textColor[Math.floor(Math.random() * textColor.length)];
+            console.log('点击了数字：', this.innerHTML);
+        });
+
+        numberElem.addEventListener('mouseleave', function () {
+            numberElem.style.color = 'white'
+
+        });
+    })
+
+    // 获取容器元素
+    var gifContainer = document.getElementById('gifContainer');
+
+    // 循环遍历26个字母
+    for (var i = 0; i < 26; i++) {
+        // 获取字母
+        var letter = String.fromCharCode(64 + i);
+
+        // 创建image元素
+        var img = document.createElement('img');
+
+        // 设置图片路径
+        img.src = new URL("./image/acitve/" + letter + '.gif', import.meta.url).href;
+
+        // 将image元素添加到容器中
+        gifContainer.appendChild(img);
+    }
+
+
+
+
+</script>
+
+</html>

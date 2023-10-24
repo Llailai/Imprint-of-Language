@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+.main,
+.home {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Custom";
+    src: url("../font/ImprintOfLanguage-Regular-2.ttf") format("woff2")
+}
+
+.main {}
+
+.main-header {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/gallery.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.main-content {
+    cursor: pointer;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../image/gary.png);
+    background-size: cover;
+}
+
+.main-content:hover {
+    background-image: url(../image/color.png);
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    min-height: 200vh;
+    background: url(../image/gallery.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+#container {
+    /* cursor: pointer; */
+}
+
+#img-tow {
+    display: none;
+}
+
+.letter {
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.letter:hover {
+    cursor: pointer;
+}
+
+
+#container span {
+    font-family: "Custom", sans-serif;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+
+
+}
+
+
+
+
+#container span:nth-child(even) {
+    left: 20rem;
+
+}
+
+#container span:nth-child(odd) {
+    right: 20rem;
+}
+
+#container span:nth-child(1) {
+    top: 5rem;
+    font-size: 13rem;
+}
+
+#container span:nth-child(2) {
+    top: 300px;
+    left: 0;
+    font-size: 20rem;
+}
+
+#container span:nth-child(3) {
+    top: 23rem;
+    right: 45%;
+    font-size: 9rem;
+}
+
+#container span:nth-child(4) {
+    top: 80px;
+    font-size: 10rem;
+    left: 30rem;
+}
+
+#container span:nth-child(5) {
+    top: 27rem;
+    font-size: 24rem;
+    right: 6%;
+}
+
+#container span:nth-child(6) {
+    top: 40rem;
+    left: 25%;
+    font-size: 9rem;
+}
+
+#container span:nth-child(7) {
+    top: 45rem;
+    font-size: 14rem;
+    right: 35%;
+}
+
+#container span:nth-child(8) {
+    top: 55rem;
+
+    font-size: 24rem;
+    left: 10%;
+}
+
+#container span:nth-child(9) {
+    top: 65rem;
+    font-size: 17rem;
+    right: 0;
+}
+
+#container span:nth-child(10) {
+    top: 75rem;
+    left: 45%;
+    font-size: 13rem;
+}
+
+#container span:nth-child(11) {
+    top: 65rem;
+    right: 30%;
+    font-size: 4rem;
+
+}
+
+#container span:nth-child(12) {
+    bottom: 0;
+    left: 5rem;
+    font-size: 14rem;
+
+}
+
+#container span:nth-child(13) {
+    bottom: 3rem;
+    font-size: 24rem;
+    right: 15%;
+}
+
+#container span:nth-child(14) {
+    top: 85rem;
+    font-size: 14rem;
+}
+
+.home-header {
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.home-header img {
+    width: 6.5rem;
+    cursor: pointer;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.active {
+    background: url(../image/acitve/bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-y: auto;
+    padding: 0 3rem;
+}
+
+.active span {
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+    margin-right: 3rem;
+}
+
+.active .icon {
+    width: 20rem;
+    margin-right: 3rem;
+}
+
+.number {
+    display: flex;
+}
+
+.number img {
+    width: 35rem;
+}
+
+.number img:nth-child(1) {
+    display: none;
+}

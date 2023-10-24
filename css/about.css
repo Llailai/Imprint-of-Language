@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html,
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("../font/Milligram-Regular.otf") format("woff2")
+}
+
+.main {}
+
+#box1 {
+    position: relative;
+    background: url(../image/About背景第一张.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: 800;
+    transition: height 0.2s ease;
+}
+
+.main-text {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../image/About背景第二张.jpg) no-repeat;
+    background-size: cover;
+    transition: height 0.5s ease;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 10rem;
+}
+
+.content img {
+    width: 50rem;
+}
+
+.content-text {
+    width: 30rem;
+    font-size: 1.2rem;
+
+}
+
+.content-text p {
+    font-family: "CustomFont", sans-serif;
+}
+
+#container {
+    overflow-y: scroll;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.home-header {
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.home-header img {
+    width: 6.5rem;
+    cursor: pointer;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}

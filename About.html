@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/about.css" rel="stylesheet">
+    <title>Imprint of Language</title>
+</head>
+
+<body>
+    <div class="main" id="container">
+
+        <div id="box1">
+            <div class="home-header">
+                <a href="./index.html"><img src="./image/home.jpg" alt=""></a>
+                <div class="right"> <a href="./About.html"> <img src="./image/导航about.png" alt=""></a>
+                    <a href="./Gallery.html"> <img src="./image/导航gallery.png" alt=""></a>
+                    <a href="./PlayGround.html"><img style="width: 9rem;" src="./image/导航playground.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="main-about">
+                <p>ABOUT</p>
+                <p>PROJECT</p>
+            </div>
+
+        </div>
+        <div class="main-text" id="box2">
+            <div class="content">
+                <img src="./image/about页面人物1.png" alt="">
+                <div class="content-text">
+                    <p>"Imprint of Language" is a design project that is
+                        deeply rooted in the author's personal experiences
+                        and emotional journey during overseas study amid
+                        the global COVID-19 pandemic. The project aims
+                        to explore the role of intelligent machines in the
+                        context of a new language system and its impact on
+                        emotional communication between individuals after
+                        undergoing artificial active operation.</p>
+                    <br>
+                    <p>Through research and exploration of this "new
+                        language system," the author seeks to understand
+                        how it affects their emotional communication and
+                        information transmission within these important
+                        relationships. By doing so, the project aims to open
+                        a real conversation box in a romantic and abstract
+                        manner, allowing for the sharing and passing on of
+                        stories and experiences.</p>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="content-text">
+                    <p>The project seeks to delve into the potential effects
+                        of language under by intelligent machines, on the
+                        way people communicate and connect emotionally.
+                        The focus on emotions and personal experiences in
+                        the context of the COVID-19 pandemic could make
+                        the project both relevant and relatable to a broader
+                        audience. The abstract and creative approach
+                        suggests that the author aims to evoke feelings and
+                        reflections through the art project.</p>
+                    <br>
+                    <p>"Imprint of Language" intertwines personal
+                        experiences, technology, emotions, and storytelling
+                        to create a unique and engaging exploration of the
+                        evolving nature of human communication.</p>
+                </div>
+                <img src="./image/about页面人物2.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const container = document.getElementById("container");
+    var box1 = document.getElementById('box1');
+    var box2 = document.getElementById('box2');
+
+    container.addEventListener('scroll', function () {
+        var scrollTop = container.scrollTop;
+        var containerHeight = container.clientHeight;
+
+        box1.style.height = (containerHeight - scrollTop - 100) + 'px';
+        // box2.style.height = (containerHeight - box1.clientHeight) + 'px';
+    });
+</script>
+
+</html>
