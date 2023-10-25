@@ -81,15 +81,14 @@ window.addEventListener("scroll", function () {
   if (scrollTop > lastScrollTop && scrollTop > 600) {
     // 向下滚动
     scale += 0.1;
-    console.log(eyeballContainer.clientHeight);
-
-    if (scrollTop == eyeballContainer.clientHeight) {
-      window.location.href = "./About.html";
-    }
   } else {
     // 向上滚动
     scale -= 0.05;
     console.log("向上滚动");
+  }
+
+  if (scrollTop == eyeballContainer.clientHeight) {
+    window.location.href = "./About.html";
   }
 
   lastScrollTop = scrollTop;

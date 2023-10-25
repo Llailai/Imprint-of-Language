@@ -107,8 +107,8 @@ body,
 .crs {
     position: absolute;
     left: 68.3%;
-    width: 7.6rem;
-    height: 7.6rem;
+    width: 12rem;
+    height: 12rem;
     background-color: aqua;
     border-radius: 50%;
     opacity: 0;
