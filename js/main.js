@@ -91,7 +91,7 @@ window.addEventListener("scroll", function () {
   console.log(eyeballContainer.clientHeight);
   console.log(
     scrollTop == eyeballContainer.clientHeight ||
-      scrollTop > eyeballContainer.clientHeight
+      scrollTop < eyeballContainer.clientHeight
   );
   if (scrollTop == eyeballContainer.clientHeight) {
     window.location.href = "./About.html";
