@@ -76,7 +76,7 @@ var scaEye = document.getElementById("scaEye");
 var lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollTop = document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop && scrollTop > 600) {
     // 向下滚动
@@ -87,6 +87,9 @@ window.addEventListener("scroll", function () {
     console.log("向上滚动");
   }
 
+  console.log(scrollTop);
+  console.log(eyeballContainer.clientHeight);
+  console.log(scrollTop == eyeballContainer.clientHeight);
   if (scrollTop == eyeballContainer.clientHeight) {
     window.location.href = "./About.html";
   }
